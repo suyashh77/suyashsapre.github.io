@@ -1,0 +1,6 @@
+body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; background: #f4f4f4; color: #333; }
+a { color: #0077cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { color: #222; }
+nav a { margin-right: 1rem; }
+header { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
