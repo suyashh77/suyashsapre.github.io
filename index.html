@@ -4,30 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Suyash Sapre - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background: #f5f7fa;
       color: #333;
     }
     header {
-      background-color: #ffffff;
-      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #0077cc, #00aaff);
+      color: #fff;
+      padding: 4rem 2rem;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 0.5rem;
-      color: #555;
+      opacity: 0.9;
     }
     nav {
       margin-top: 2rem;
@@ -36,17 +35,51 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 600;
-      color: #0077cc;
+      color: #fff;
+      transition: 0.3s;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    .intro {
-      max-width: 800px;
-      margin: 2rem auto;
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
       padding: 0 2rem;
-      line-height: 1.6;
+      line-height: 1.7;
       font-size: 1.05rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+    .reasons ul {
+      list-style: none;
+      padding: 0;
+    }
+    .reasons li {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .reasons a {
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .reasons a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
@@ -54,18 +87,51 @@
   <header>
     <h1>Hi, I'm Suyash Sapre</h1>
     <p>Industrial & Systems Engineering @ NC State | Class of 2026</p>
-    <p>Efficiency Enthusiast • Supply Chain & Data Analytics • Problem Solver</p>
+    <p>Supply Chain • Data Analytics • Efficiency Enthusiast</p>
     <nav>
-      <a href="work.html">Work Experience</a>
-      <a href="skills.html">Skills & Academics</a>
-      <a href="outside.html">Outside of Work</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="upl-work.html">UPL NA Co-op</a>
+      <a href="projects.html">Personal Projects</a>
+      <a href="experience.html">Work Experience</a>
     </nav>
   </header>
+
   <section class="intro">
-    <p>I began my journey in Mechanical Engineering, but soon realized Industrial & Systems Engineering offered a perfect blend of disciplines — from data and analytics to operations and efficiency. My passion lies in the <strong>supply chain analytics</strong> and <strong>business intelligence</strong> space, where smart data-driven decisions can unlock real-world impact.</p>
-    <p>I believe in living with purpose, working efficiently, and solving meaningful problems — whether through automation, analysis, or everyday systems thinking.</p>
+    <h2>Why This Website Exists</h2>
+    <p>
+      I created this website as an extension of my resume — a longer version of 
+      <strong>why you should hire me</strong>. Resumes show bullet points, but here I want to tell you the story behind those experiences. 
+      Think of this as a conversation about how my skills and journey make me a strong fit for the opportunities I’m applying for.
+    </p>
   </section>
+
+  <section class="reasons">
+    <h2>Why Should You Hire Me?</h2>
+    <ul>
+      <li><strong>UPL NA Co-op</strong> — Hands-on supply chain & data-driven efficiency work. 
+        <a href="upl-work.html">Learn more →</a></li>
+      <li><strong>Personal Projects</strong> — Building tools, automations, and dashboards that solve real problems. 
+        <a href="projects.html">See projects →</a></li>
+      <li><strong>Work Experience</strong> — Leadership, teamwork, and problem-solving across different roles. 
+        <a href="experience.html">View experience →</a></li>
+    </ul>
+  </section>
+
+  <section class="who">
+    <h2>Who You’re Hiring</h2>
+    <p>
+      My name is <strong>Suyash</strong>. I was born in Boston, grew up in India, and later moved to Raleigh 
+      to study Industrial & Systems Engineering at NC State. My background shaped me into someone who values 
+      adaptability, culture, and global perspective. 
+    </p>
+    <p>
+      Outside of academics and work, I’m passionate about music (I DJ a bit and make remixes on SoundCloud 🎧), 
+      soccer (player, coach, referee, and fan ⚽), and cooking 🍳. These aren’t just hobbies — they teach me creativity, 
+      discipline, and teamwork, which I bring into my professional work.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Suyash Sapre | Portfolio Website</p>
+  </footer>
 </body>
 </html>
