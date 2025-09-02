@@ -6,41 +6,64 @@
   <title>Suyash Sapre - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --blue-dark: #004c8c;
+      --blue: #0077cc;
+      --blue-light: #e6f3ff;
+      --gray-dark: #333;
+      --gray: #555;
+      --gray-light: #f5f7fa;
+      --white: #fff;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
-      color: #333;
+      background: var(--gray-light);
+      color: var(--gray-dark);
     }
+
     header {
-      background: linear-gradient(135deg, #0077cc, #00aaff);
-      color: #fff;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
       padding: 4rem 2rem;
       text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
+
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
+
     header p {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
       opacity: 0.9;
     }
+
     nav {
       margin-top: 2rem;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 600;
-      color: #fff;
-      transition: 0.3s;
+      color: var(--white);
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      background: var(--white);
+      color: var(--blue-dark);
     }
+
     section {
       max-width: 900px;
       margin: 3rem auto;
@@ -48,38 +71,51 @@
       line-height: 1.7;
       font-size: 1.05rem;
     }
+
     h2 {
       font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #0077cc;
+      margin-bottom: 1.2rem;
+      color: var(--blue-dark);
     }
-    .reasons ul {
+
+    .card-list {
       list-style: none;
       padding: 0;
     }
-    .reasons li {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    .card-list li {
+      margin: 1.2rem 0;
+      padding: 1.5rem;
+      background: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
     }
-    .reasons a {
-      color: #0077cc;
+
+    .card-list li:hover {
+      transform: translateY(-3px);
+    }
+
+    .card-list a {
+      color: var(--blue);
       font-weight: 600;
       text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
     }
-    .reasons a:hover {
+
+    .card-list a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
-      background: #fff;
+      background: var(--white);
       margin-top: 3rem;
       border-top: 1px solid #eee;
       font-size: 0.9rem;
-      color: #666;
+      color: var(--gray);
     }
   </style>
 </head>
@@ -106,28 +142,43 @@
 
   <section class="reasons">
     <h2>Why Should You Hire Me?</h2>
-    <ul>
-      <li><strong>UPL NA Co-op</strong> — Hands-on supply chain & data-driven efficiency work. 
-        <a href="upl-work.html">Learn more →</a></li>
-      <li><strong>Personal Projects</strong> — Building tools, automations, and dashboards that solve real problems. 
-        <a href="projects.html">See projects →</a></li>
-      <li><strong>Work Experience</strong> — Leadership, teamwork, and problem-solving across different roles. 
-        <a href="experience.html">View experience →</a></li>
+    <ul class="card-list">
+      <li>
+        <strong>UPL NA Co-op</strong> — Hands-on supply chain & data-driven efficiency work. 
+        <br><a href="upl-work.html">Learn more →</a>
+      </li>
+      <li>
+        <strong>Personal Projects</strong> — Building tools, automations, and dashboards that solve real problems. 
+        <br><a href="projects.html">Learn more →</a>
+      </li>
+      <li>
+        <strong>Work Experience</strong> — Leadership, teamwork, and problem-solving across different roles. 
+        <br><a href="experience.html">Learn more →</a>
+      </li>
     </ul>
   </section>
 
   <section class="who">
     <h2>Who You’re Hiring</h2>
-    <p>
-      My name is <strong>Suyash</strong>. I was born in Boston, grew up in India, and later moved to Raleigh 
-      to study Industrial & Systems Engineering at NC State. My background shaped me into someone who values 
-      adaptability, culture, and global perspective. 
-    </p>
-    <p>
-      Outside of academics and work, I’m passionate about music (I DJ a bit and make remixes on SoundCloud 🎧), 
-      soccer (player, coach, referee, and fan ⚽), and cooking 🍳. These aren’t just hobbies — they teach me creativity, 
-      discipline, and teamwork, which I bring into my professional work.
-    </p>
+    <ul class="card-list">
+      <li>
+        <p>My name is <strong>Suyash</strong>. I was born in Boston, grew up in India, and later moved to Raleigh 
+        to study Industrial & Systems Engineering at NC State. My background shaped me into someone who values 
+        adaptability, culture, and global perspective.</p>
+      </li>
+      <li>
+        <strong>Music 🎧</strong> — I DJ and make remixes on SoundCloud.  
+        <br><a href="music.html">Learn more →</a>
+      </li>
+      <li>
+        <strong>Soccer ⚽</strong> — Player, coach, referee, and lifelong fan.  
+        <br><a href="soccer.html">Learn more →</a>
+      </li>
+      <li>
+        <strong>Cooking 🍳</strong> — Exploring food as creativity and science.  
+        <br><a href="cooking.html">Learn more →</a>
+      </li>
+    </ul>
   </section>
 
   <footer>
