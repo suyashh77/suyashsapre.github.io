@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience - Suyash Sapre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue-dark: #004c8c;
+      --blue: #0077cc;
+      --blue-light: #e6f3ff;
+      --gray-dark: #333;
+      --gray: #555;
+      --gray-light: #f5f7fa;
+      --white: #fff;
+      --shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gray-light);
+      color: var(--gray-dark);
+      line-height: 1.6;
+    }
+
+    /* Sticky header with gradient shrink */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: var(--shadow);
+      transition: padding 0.3s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--blue-dark);
+      text-align: center;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin: 0.5rem auto;
+      background: var(--blue);
+      border-radius: 2px;
+    }
+
+    .experience-card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border-left: 6px solid var(--blue);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .experience-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+      color: var(--blue-dark);
+      font-size: 1.4rem;
+    }
+
+    .experience-card p {
+      margin: 0.4rem 0;
+    }
+
+    .experience-card strong {
+      color: var(--blue);
+    }
+
+    .skills {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      color: var(--gray);
+      background: var(--blue-light);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    /* Responsive Google Slides */
+    .slides-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 ratio */
+      margin-top: 1rem;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .slides-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--white);
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Work Experience</h1>
+    <p>Operations, Coaching and Refereeing</p>
+  </header>
+
+  <div class="container">
+    <h2>Experience Highlights</h2>
+
+    <!-- David Phillips Internship -->
+    <div class="experience-card">
+      <h3>Operations Intern</h3>
+      <p><strong>David Phillips</strong> · Jun 2023 – Aug 2023 · London, UK</p>
+      <p>Audited 1,000+ live inventory products; identified 500+ critical data gaps (range names, gross weights, unit volumes).</p>
+      <p>Benchmarked Amazon & London Furniture Co. naming standards; created scalable product naming conventions.</p>
+      <p>Proposed new data validation & governance processes to enhance forecasting reliability.</p>
+      <p>Analyzed purchasing data in Excel to estimate carbon footprint for ESG reporting.</p>
+      <p><em>Expanded business efficiency by standardizing workflows, improving transparency, and aligning data management with ESG objectives.</em></p>
+      <p class="skills">Skills: Microsoft Excel · Data Analysis · ESG · Vendor Management · Operations Strategy</p>
+      <!-- Responsive Google Slides -->
+      <div class="slides-wrapper">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSr3q_IBYc_Z98jz7SUSoedJ48rMlKGrOdl81Mp3jVtitYWOVbt669JPHs3WzkfOw/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <!-- Game Day Staff -->
+    <div class="experience-card">
+      <h3>Game Day Staff</h3>
+      <p><strong>North Carolina Football Club</strong> · Aug 2024 – Oct 2024 · Raleigh, NC</p>
+      <p>Supported NCFC and NC Courage game days by assisting with logistics, security checkpoints, ticketing, and fan engagement.</p>
+      <p><em>Enhanced fan experience while ensuring smooth stadium operations under high-pressure environments.</em></p>
+      <p class="skills">Skills: Organization · Task Execution · Communication</p>
+    </div>
+
+    <!-- Sports Programs Evaluator -->
+    <div class="experience-card">
+      <h3>Sports Programs Evaluator</h3>
+      <p><strong>NC State University</strong> · Jan 2023 – May 2023 · Raleigh, NC</p>
+      <p>Trained new intramural officials and acted as a clinician to evaluate referees’ performance.</p>
+      <p><em>Helped raise officiating standards by mentoring peers and fostering a culture of accountability.</em></p>
+      <p class="skills">Skills: Communication · Team Leadership · Organization</p>
+    </div>
+
+    <!-- Sports Program Official -->
+    <div class="experience-card">
+      <h3>Sports Program Official</h3>
+      <p><strong>NC State University</strong> · Aug 2022 – Dec 2022 · Raleigh-Durham, NC</p>
+      <p>Officiated intramural soccer leagues, ensuring player safety and fair play. Awarded the Iron Wolf Soccer Official Award.</p>
+      <p><em>Recognized for consistency and integrity in officiating across competitive environments.</em></p>
+      <p class="skills">Skills: Leadership · Refereeing · Communication</p>
+    </div>
+
+    <!-- Refereeing Roles -->
+    <div class="experience-card">
+      <h3>Regional Referee</h3>
+      <p><strong>U.S. Soccer Federation</strong> · Feb 2024 – Present · Raleigh, NC</p>
+      <p>Officiated youth and adult leagues/tournaments including USYS NL, ECNL, NPL, MLS Next, USL2, USLW, UPSL, NPSL, and NCSL.</p>
+      <p><em>Built adaptability by refereeing diverse competitive levels under strict regulatory frameworks.</em></p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Grassroots Referee</h3>
+      <p><strong>U.S. Soccer Federation</strong> · Sep 2022 – Feb 2024 · United States</p>
+      <p>Officiated grassroots and competitive matches across multiple age groups and leagues.</p>
+      <p><em>Established credibility through reliable officiating, enabling progression to advanced regional licensing.</em></p>
+    </div>
+
+    <!-- Coaching Roles -->
+    <div class="experience-card">
+      <h3>Seasonal Soccer Coach</h3>
+      <p><strong>North Carolina FC Youth</strong> · Feb 2025 – Apr 2025 · Raleigh, NC</p>
+      <p>Led weekly sessions at JDP North and Kickstarters, developing technical skills for young players.</p>
+      <p><em>Inspired enthusiasm for soccer by combining fun with structured technical learning.</em></p>
+    </div>
+
+    <div class="experience-card">
+      <h3>Soccer Coach</h3>
+      <p><strong>Footie First Academy</strong> · Sep 2021 – Jul 2022 · Mumbai, India</p>
+      <p>Coached kids aged 5–11, organized tournaments, and launched a new training center through marketing and trial sessions.</p>
+      <p><em>Contributed to grassroots development by training 200+ young players and strengthening the academy’s reach.</em></p>
+      <p class="skills">Skills: Coaching · Player Development · Team Leadership</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Suyash Sapre | Work Experience</p>
+  </footer>
+</body>
+</html>
